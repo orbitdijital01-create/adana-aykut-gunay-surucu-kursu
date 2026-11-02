@@ -1,4 +1,37 @@
 User-agent: *
 Allow: /
 
+# AI & LLM Search Crawlers (ChatGPT, Perplexity, Google AI, Claude, Copilot)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://adanaaykutgunaysurucukursu.com/sitemap.xml
+# AI Knowledge Base: https://adanaaykutgunaysurucukursu.com/llms.txt
+# Full AI Knowledge Base: https://adanaaykutgunaysurucukursu.com/llms-full.txt

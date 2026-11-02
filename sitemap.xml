@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://adanaaykutgunaysurucukursu.com/</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://adanaaykutgunaysurucukursu.com/hakkimizda.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://adanaaykutgunaysurucukursu.com/assets/images/logo.jpg</image:loc>
+      <image:title>Özel Aykut Günay Sürücü Kursu - Adana Yüreğir Sürücü ve Ehliyet Kursu</image:title>
+      <image:caption>Adana Sürücü Kursu ve Yüreğir Ehliyet Kursu - Özel Aykut Günay Sürücü Kursu</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://adanaaykutgunaysurucukursu.com/hizmetlerimiz.html</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://adanaaykutgunaysurucukursu.com/galeri.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://adanaaykutgunaysurucukursu.com/iletisim.html</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://adanaaykutgunaysurucukursu.com/hakkimizda.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://adanaaykutgunaysurucukursu.com/galeri.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://adanaaykutgunaysurucukursu.com/llms.txt</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 </urlset>
