@@ -49,6 +49,10 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -56,7 +60,16 @@ body {
   color: var(--text-body);
   background-color: var(--surface-white);
   line-height: 1.6;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+}
+
+main,
+header,
+footer,
+section {
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -4329,7 +4342,7 @@ button, input, select {
 /* ==================== LOCAL SEO & FAQ SECTION (ADANA & YÜREĞİR SÜRÜCÜ KURSU) ==================== */
 .seo-faq-section {
   background: #ffffff;
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-color);
 }
 
 .seo-faq-layout {
@@ -4347,7 +4360,7 @@ button, input, select {
 
 .faq-item {
   background: #f8faf8;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -4366,7 +4379,7 @@ button, input, select {
   justify-content: space-between;
   gap: 16px;
   padding: 18px 22px;
-  font-family: var(--font-heading);
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--brand-navy-dark);
@@ -4482,14 +4495,398 @@ button, input, select {
   color: #ffffff;
 }
 
+.btn.btn-primary.btn-full {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 46px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--brand-green-light) 0%, var(--brand-green) 100%);
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 20px rgba(104, 151, 56, 0.32);
+}
+
+/* ==========================================================================
+   IPHONE (iOS SAFARI) & ANDROID MOBILE / TABLET STABILITY & UX SUITE
+   Prevents horizontal shifting, text overlapping, cramped grids, and iOS zoom
+   ========================================================================== */
+
 @media (max-width: 1024px) {
   .seo-faq-layout {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
+  .main-nav.open {
+    max-height: calc(100dvh - 76px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (max-width: 768px) {
+  /* 1. Container & Global Wrapping Safety */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, a, strong, li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* 2. Top Utility Bar Clean Mobile Wrap */
+  .topbar {
+    padding: 6px 0;
+  }
+
+  .topbar-left {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    line-height: 1.35;
+  }
+
+  .topbar-badge {
+    font-size: 0.64rem;
+    padding: 2px 7px;
+  }
+
+  .topbar-text {
+    font-size: 0.73rem;
+    line-height: 1.35;
+  }
+
+  /* 3. Sticky Header — Zero Overflow on 360px-430px iPhone & Android */
+  .header-inner {
+    min-height: 66px;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .brand-logo {
+    min-width: 0;
+    flex: 1;
+    gap: 9px;
+  }
+
+  .brand-logo-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-logo-text {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand-title {
+    font-size: clamp(0.95rem, 4vw, 1.06rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-subtitle {
+    font-size: 0.54rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-header-cta {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 0.74rem;
+  }
+
+  .mobile-menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 4. Hero Section — No Overlapping Badges or Cramped Text */
+  .hero-container {
+    padding-top: 34px;
+    padding-bottom: 54px;
+    gap: 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-pill {
+    white-space: normal;
+    font-size: 0.69rem;
+    line-height: 1.35;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.65rem, 6.4vw, 2.2rem);
+    line-height: 1.18;
+    margin-bottom: 14px;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  .hero-trust-row {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .callout-circle-badge {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .btn-primary-green,
+  .btn-outline-light {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 18px;
+  }
+
+  /* 5. About & Featured Course Offering — Prevent Image/Overlay Clipping */
+  .about-floating-learners {
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .featured-course-media {
+    height: auto;
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .featured-course-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .featured-course-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 80px 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: linear-gradient(to top, rgba(6, 27, 44, 0.95) 0%, rgba(6, 27, 44, 0.65) 65%, rgba(6, 27, 44, 0.15) 100%);
+  }
+
+  .featured-overlay-left h3 {
+    font-size: 1.18rem;
+    line-height: 1.28;
+  }
+
+  .featured-course-body {
+    padding: 18px 16px;
+  }
+
+  .offering-tab-btn {
+    min-height: 46px;
+    padding: 10px 12px;
+    font-size: 0.84rem;
+    gap: 8px;
+  }
+
+  /* 6. Services Dark Section — Native Touch Scroll Snap & Clean Header Wrap */
+  .services-cards-viewport {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 2px 14px;
+  }
+
+  .services-cards-track {
+    grid-auto-columns: 88%;
+    gap: 14px;
+  }
+
+  .services-cards-track.grid-all-mode {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    scroll-snap-align: center;
+    padding: 18px 16px;
+  }
+
+  .service-card-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* 7. Team Instructor Cards — Stack Photo Above Text on Mobile */
+  .team-card {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card-photo {
+    order: -1;
+    height: 230px;
+  }
+
+  .team-card-photo img {
+    min-height: 230px;
+    height: 230px;
+    object-position: top center;
+  }
+
+  .team-card-info {
+    padding: 18px 16px;
+    gap: 8px;
+  }
+
+  /* 8. Steering Wheel Interactive Stage & Process Pill */
+  .steering-wheel-stage {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .process-bottom-pill {
+    border-radius: 14px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+
+  /* 9. Blog & Testimonials Mobile Polish */
+  .blog-content-box {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .blog-text-col {
+    padding: 16px 14px;
+  }
+
+  .testimonial-card {
+    padding: 20px 16px;
+  }
+
+  .testi-rating-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* 10. Subpages Watermark & Certificate Overflow Prevention */
+  .giant-watermark-text {
+    font-size: clamp(1.55rem, 7.2vw, 3.2rem);
+    letter-spacing: 0.02em;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .breadcrumb-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    font-size: 0.78rem;
+    padding: 6px 12px;
+  }
+
+  .cert-body {
+    padding: 18px 14px;
+  }
+
+  .cert-footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .c-info-card {
+    padding: 18px 14px;
+    gap: 12px;
+  }
+
+  .c-card-body {
+    min-width: 0;
+  }
+
+  /* 11. iOS Safari Input Auto-Zoom Prevention (16px Minimum) */
+  .form-field input,
+  .form-field select,
+  .cmc-textarea-wrap textarea {
+    font-size: 16px !important;
+  }
+
+  /* 12. Footer Mobile Layout & Safe Area clearance for Floating Buttons */
+  .site-footer {
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .footer-contact-strip {
+    padding: 18px 16px;
+    gap: 16px;
+  }
+
+  .fcs-item {
+    align-items: flex-start;
+  }
+
+  .fcs-item div {
+    min-width: 0;
+  }
+
+  .fcs-item strong {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    display: block;
+  }
+
+  .fcs-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .fcs-btn-primary,
+  .fcs-btn-secondary {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .floating-contact-widget {
+    right: 14px;
+    bottom: max(14px, env(safe-area-inset-bottom, 14px));
+    gap: 10px;
+  }
+
+  /* 13. FAQ & Local SEO Section Mobile */
   .faq-question {
     padding: 15px 16px;
     font-size: 0.93rem;
@@ -4501,6 +4898,33 @@ button, input, select {
   }
 
   .seo-local-card {
-    padding: 24px 20px;
+    padding: 24px 18px;
+  }
+}
+
+/* Extra-Compact Phones (iPhone SE / Mini / 360px–420px Android) */
+@media (max-width: 420px) {
+  .header-actions .btn-header-cta {
+    padding: 0 10px;
+    font-size: 0.71rem;
+    height: 34px;
+  }
+
+  .brand-logo-img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-title {
+    font-size: 0.92rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  .services-cards-track {
+    grid-auto-columns: 92%;
   }
 }
