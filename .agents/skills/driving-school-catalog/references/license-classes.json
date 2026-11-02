@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a1",
+    "title": "A1 Sınıfı Ehliyet",
+    "category": "Motosiklet",
+    "transmission": "Manuel / Otomatik Seçenekli",
+    "minAge": 16,
+    "duration": "14 Saat Direksiyon + Teorik",
+    "shortDesc": "125 cc ve 11 kW güce kadar olan motosikletler için güvenli başlangıç eğitimi.",
+    "condition": "Doğrudan başvuru yapılabilir"
+  },
+  {
+    "id": "a2-manuel",
+    "title": "A2 Sınıfı Ehliyet (Manuel)",
+    "category": "Motosiklet",
+    "transmission": "Manuel (Vitesli)",
+    "minAge": 18,
+    "duration": "14 Saat Direksiyon + Teorik",
+    "shortDesc": "35 kW (47 HP) güce kadar debriyajlı/vitesli motosikletler için hakimiyet ve denge eğitimi.",
+    "condition": "Doğrudan başvuru yapılabilir"
+  },
+  {
+    "id": "a2-otomatik",
+    "title": "A2 Sınıfı Ehliyet (Otomatik)",
+    "category": "Motosiklet",
+    "transmission": "Otomatik (CVT / Maxi Scooter)",
+    "minAge": 18,
+    "duration": "14 Saat Direksiyon + Teorik",
+    "shortDesc": "Vites değiştirmeden 35 kW'a kadar otomatik motosiklet ve maxi scooter kullanmak isteyenlere özel.",
+    "condition": "Doğrudan başvuru yapılabilir"
+  },
+  {
+    "id": "b-manuel",
+    "title": "B Sınıfı Ehliyet (Manuel)",
+    "category": "Otomobil",
+    "transmission": "Manuel Vites",
+    "minAge": 18,
+    "duration": "16 Saat Birebir Direksiyon",
+    "shortDesc": "Hem manuel hem de otomatik vitesli otomobil ve kamyonetleri kullanma yetkisi sağlayan kapsamlı eğitim.",
+    "condition": "Doğrudan başvuru yapılabilir"
+  },
+  {
+    "id": "b-otomatik",
+    "title": "B Sınıfı Ehliyet (Otomatik)",
+    "category": "Otomobil",
+    "transmission": "Otomatik Vites",
+    "minAge": 18,
+    "duration": "16 Saat Birebir Direksiyon",
+    "shortDesc": "Debriyaj stresi olmadan şehir içi trafikte konforlu ve hızlı otomobil sürüş uzmanlığı.",
+    "condition": "Doğrudan başvuru yapılabilir"
+  },
+  {
+    "id": "b-engelli",
+    "title": "B Sınıfı Engelli Ehliyeti",
+    "category": "Otomobil / Özel Tertibat",
+    "transmission": "Otomatik & Özel Tertibatlı",
+    "minAge": 18,
+    "duration": "Birebir Esnek Direksiyon Programı",
+    "shortDesc": "Özel tertibatlı eğitim araçlarımız ve uzman eğitmenlerimizle engelsiz sürüş özgürlüğü.",
+    "condition": "Özel Kodlu Sağlık Raporu"
+  },
+  {
+    "id": "c-sinifi",
+    "title": "C Sınıfı Ehliyet",
+    "category": "Ağır Vasıta",
+    "transmission": "Manuel / Ticari",
+    "minAge": 21,
+    "duration": "20 Saat Direksiyon Eğitimi",
+    "shortDesc": "Kamyon ve çekici kullanacak profesyonel sürücüler için yük ve tonaj hakimiyeti eğitimi.",
+    "condition": "En az B sınıfı ehliyet şartı"
+  },
+  {
+    "id": "ce-sinifi",
+    "title": "CE Sınıfı Ehliyet",
+    "category": "Ağır Vasıta (Tır)",
+    "transmission": "Manuel / Çekici & Römork",
+    "minAge": 21,
+    "duration": "12 Saat İleri Manevra Eğitimi",
+    "shortDesc": "Tır, yarı römork ve dorse geri manevra tekniklerinde uzmanlaşmak isteyen sürücüler için.",
+    "condition": "C sınıfı ehliyet şartı"
+  },
+  {
+    "id": "d-sinifi",
+    "title": "D Sınıfı Ehliyet",
+    "category": "Ağır Vasıta (Otobüs)",
+    "transmission": "Manuel / Yolcu Taşıma",
+    "minAge": 24,
+    "duration": "14 Saat Direksiyon Eğitimi",
+    "shortDesc": "Şehir içi ve şehirlerarası otobüs kaptanlığı için güvenli yolcu taşımacılığı eğitimi.",
+    "condition": "En az B sınıfı ehliyet şartı"
+  },
+  {
+    "id": "psikoteknik",
+    "title": "Psikoteknik",
+    "category": "Belgelendirme & Test",
+    "transmission": "Simülatör Destekli Test",
+    "minAge": 18,
+    "duration": "1 Saatlik Değerlendirme (Aynı Gün Rapor)",
+    "shortDesc": "Ticari sürücüler ve ehliyet iadesi için psikolog eşliğinde e-Devlet onaylı psikoteknik belgesi.",
+    "condition": "Kimlik ve Ehliyet ile Başvuru"
+  }
+]
